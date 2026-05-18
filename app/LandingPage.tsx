@@ -6,6 +6,7 @@ import OurCourses from '@/components/OurCourses'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import MobileOurCourses from '@/components/MobileOurCourses'
 
 
 const LandingPage = () => {
@@ -15,6 +16,7 @@ const LandingPage = () => {
         <Navbar/>
         <HeroSection/>
         <OurCourses/>
+        <MobileOurCourses/>
         <WhyChooseUs/>
         <Contact/>
         <Footer/>

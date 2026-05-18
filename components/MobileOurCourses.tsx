@@ -14,14 +14,14 @@ const OurCourses = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 3 } },
-      { breakpoint: 768,  settings: { slidesToShow: 2 } },
+      { breakpoint: 1024, settings: { slidesToShow: 1 } },
+      { breakpoint: 768,  settings: { slidesToShow: 1 } },
       { breakpoint: 480,  settings: { slidesToShow: 1 } }
     ]
   }
@@ -75,11 +75,11 @@ const OurCourses = () => {
   ]
 
   return (
-    <div className='hidden lg:block'>
+    <div className='lg:hidden'>
 
-      <div className="text-center sm:py-25 py-10  ">
+      <div className="text-center sm:py-25 py-10 ">
         <h1 className='md:text-3xl text-xl text-[var(--gray)] font-bold'>
-          Our Courses
+          Our Courses2
         </h1>
 
         <p className='md:text-xl text-sm text-[var(--gray)]/50'>
