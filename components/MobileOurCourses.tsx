@@ -79,7 +79,7 @@ const OurCourses = () => {
 
       <div className="text-center sm:py-25 py-10 ">
         <h1 className='md:text-3xl text-xl text-[var(--gray)] font-bold'>
-          Our Courses2
+          Our Courses
         </h1>
 
         <p className='md:text-xl text-sm text-[var(--gray)]/50'>
@@ -94,7 +94,7 @@ const OurCourses = () => {
          
             {courses.map((course) => (
                 <div key={course.id} className="px-3 pb-8">
-                <div className="flex flex-col gap-4   shadow-lg overflow-hidden border-blur-2xl bg-[var(--gray)]/5">
+                <div className="flex flex-col gap-4   shadow-lg overflow-hidden border-blur-2xl bg-[var(--blue)]/20">
                     <div className="relative h-56">
                         <Image
                         src={course.image}
@@ -108,7 +108,7 @@ const OurCourses = () => {
                     </div>
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col gap-4">
-                        <h2 className='font-bold sm:text-[18px] text-[15px] px-5'>{course.title}</h2>
+                        <h2 className='font-bold sm:text-[18px] text-[15px] px-5 mt-5'>{course.title}</h2>
                         <p className='sm:text-[15px] text-[12px] px-5'>{course.text}</p>
                     </div>
                     <div className="flex items-center justify-between px-5">
@@ -123,7 +123,7 @@ const OurCourses = () => {
                     </div>
                     </div>
                     <Link href={course.link} 
-                    className="bg-[var(--lightblue)] hover:bg-[var(--lightblue)]/80 hover:text-[var(--white)] px-3 py-1 text-center transition-all ease-in-out duration-300 ">Enroll Now</Link>
+                    className="bg-[var(--lightblue)] hover:bg-[var(--lightblue)]/80 hover:text-[var(--white)] px-3 py-2 text-center transition-all ease-in-out duration-300 ">Enroll Now</Link>
                     </div>
                 </div>
 
