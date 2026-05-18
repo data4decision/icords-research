@@ -124,7 +124,7 @@ const Contact = () => {
                         <div className="space-y-6">
                             <div className="flex items-start gap-4">
                                 <div className="mt-1 w-10 h-10 rounded-full bg-[var(--lightblue)]/10 flex items-center justify-center flex-shrink-0">
-                                    <FaLink className="text-[var(--lightblue)]" />
+                                    <FaLink size={20} className="text-[var(--lightblue)]" />
                                 </div>
                                 <div>
                                     <p className="font-medium text-[var(--gray)] sm:text-lg text-sm">Website</p>
@@ -140,7 +140,7 @@ const Contact = () => {
 
                             <div className="flex items-start gap-4">
                                 <div className="mt-1 w-10 h-10 rounded-full bg-[var(--lightblue)]/10 flex items-center justify-center flex-shrink-0">
-                                    <FaEnvelope className="text-[var(--lightblue)]" />
+                                    <FaEnvelope size={20} className="text-[var(--lightblue)]" />
                                 </div>
                                 <div>
                                     <p className="font-medium text-[var(--gray)] sm:text-lg text-sm">Email</p>
@@ -155,7 +155,7 @@ const Contact = () => {
 
                             <div className="flex items-start gap-4">
                                 <div className="mt-1 w-10 h-10 rounded-full bg-[var(--lightblue)]/10 flex items-center justify-center flex-shrink-0">
-                                    <FaPhone className="text-[var(--lightblue)]" />
+                                    <FaPhone size={20} className="text-[var(--lightblue)]" />
                                 </div>
                                 <div>
                                     <p className="font-medium text-[var(--gray)] sm:text-lg text-sm">Phone</p>
@@ -170,7 +170,7 @@ const Contact = () => {
 
                             <div className="flex items-start gap-4">
                                 <div className="mt-1 w-10 h-10 rounded-full bg-[var(--lightblue)]/10 flex items-center justify-center flex-shrink-0">
-                                    <FaHouseUser className="text-[var(--lightblue)]" />
+                                    <FaHouseUser size={20} className="text-[var(--lightblue)]" />
                                 </div>
                                 <div>
                                     <p className="font-medium text-[var(--gray)] sm:text-lg text-sm">Address</p>
