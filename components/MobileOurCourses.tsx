@@ -94,7 +94,7 @@ const OurCourses = () => {
          
             {courses.map((course) => (
                 <div key={course.id} className="px-3 pb-8">
-                <div className="flex flex-col gap-4   shadow-lg overflow-hidden border-blur-2xl bg-[var(--blue)]/20">
+                <div className="flex flex-col gap-4   shadow-lg overflow-hidden border-blur-2xl bg-[var(--white)]/20">
                     <div className="relative h-56">
                         <Image
                         src={course.image}

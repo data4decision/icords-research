@@ -127,7 +127,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/" className='hover:text-[var(--orange)] transition-colors'>
+                        <Link href="/contact" className='hover:text-[var(--orange)] transition-colors'>
                             Contact
                         </Link>
                     </li>
@@ -205,7 +205,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/" className='hover:text-[var(--orange)] transition-colors'>
+                        <Link href="/contact" className='hover:text-[var(--orange)] transition-colors'>
                             Contact
                         </Link>
                     </li>
