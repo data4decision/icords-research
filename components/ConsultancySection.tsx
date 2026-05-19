@@ -10,7 +10,7 @@ const ConsultancySection = () => {
         <Image
         src='/upload/xslider_new_02.jpg.pagespeed.ic.QHr4wT-HDB.jpeg'
         alt="Consultancy"
-        className="absolute  object-cover  w-full"
+        className="absolute  object-cover  w-full sm:h-[700px] h-[500px]"
         width={600}
         height={600}
       />

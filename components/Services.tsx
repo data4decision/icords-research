@@ -38,7 +38,7 @@ const Services = () => {
         },
     ]
   return (
-    <div className="py-20">
+    <div className="py-25 bg-[var(--white)]">
         <div className='max-w-7xl m-auto '>
         <h1 className='sm:text-3xl text-xl text-center text-[var(--orange)] font-extrabold'>Our Services</h1>
     </div>
