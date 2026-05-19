@@ -7,6 +7,7 @@ import WhyChooseUs from '@/components/WhyChooseUs'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import MobileOurCourses from '@/components/MobileOurCourses'
+import Map from '@/components/Map'
 
 
 const LandingPage = () => {
@@ -19,6 +20,7 @@ const LandingPage = () => {
         <MobileOurCourses/>
         <WhyChooseUs/>
         <Contact/>
+        <Map/>
         <Footer/>
     </div>
   )

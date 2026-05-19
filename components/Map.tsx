@@ -2,7 +2,7 @@ import React from 'react'
 
 const Map = () => {
   return (
-    <div className='sm:py-20 py-10'>
+    <div className='sm:py-30 py-10'>
         <h3 className='text-[var(--blue)] sm:text-2xl text-lg font-semibold px-10'>Our Location</h3>
         <h1 className='text-[var(--blue)] sm:text-3xl text-xl font-bold px-10'>Icords-research</h1>
       

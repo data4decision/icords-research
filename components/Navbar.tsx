@@ -109,7 +109,7 @@ const Navbar = () => {
                         {openDropdown === 'features' && (
                             <ul className='absolute left-0 top-full mt-2 bg-[var(--orange)] text-white shadow-lg rounded-md py-3 w-52 z-50'>
                                 <li>
-                                    <Link href="/" className='block px-5 py-2 hover:bg-white/20'>Our Service</Link>
+                                    <Link href="/services" className='block px-5 py-2 hover:bg-white/20'>Our Service</Link>
                                 </li>
                                 <li>
                                     <Link href="/" className='block px-5 py-2 hover:bg-white/20'>Data Bank</Link>
@@ -226,7 +226,7 @@ const Navbar = () => {
                         {openDropdown === 'features' && (
                             <ul className='absolute left-0 top-full mt-2 bg-[var(--orange)] text-white shadow-lg rounded-md py-3 w-52 z-50'>
                                 <li>
-                                    <Link href="/" className='block px-5 py-2 hover:bg-white/20'>Our Service</Link>
+                                    <Link href="/services" className='block px-5 py-2 hover:bg-white/20'>Our Service</Link>
                                 </li>
                                 <li>
                                     <Link href="/" className='block px-5 py-2 hover:bg-white/20'>Data Bank</Link>
