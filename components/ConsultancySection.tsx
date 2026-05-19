@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const ConsultancySection = () => {
   return (
-    <section className="relative py-24 overflow-hidden ">
+    <section className="relative py-24 overflow-hidden bg-[var(--white)]">
         <Image
         src='/upload/xslider_new_02.jpg.pagespeed.ic.QHr4wT-HDB.jpeg'
         alt="Consultancy"
