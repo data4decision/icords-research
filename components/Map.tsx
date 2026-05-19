@@ -2,7 +2,7 @@ import React from 'react'
 
 const Map = () => {
   return (
-    <div className='sm:py-30 py-10'>
+    <div className='sm:py-30 py-10 bg-[var(--white)]'>
         <h3 className='text-[var(--blue)] sm:text-2xl text-lg font-semibold px-10'>Our Location</h3>
         <h1 className='text-[var(--blue)] sm:text-3xl text-xl font-bold px-10'>Icords-research</h1>
       
@@ -14,7 +14,7 @@ const Map = () => {
         allowFullScreen
         loading="lazy" 
         referrerPolicy="no-referrer-when-downgrade"
-        className='w-full sm:h-[400px] h-[200px]'></iframe>
+        className='w-full sm:h-[600px] h-[200px]'></iframe>
     </div>
   )
 }
