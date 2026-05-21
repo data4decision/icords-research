@@ -34,7 +34,7 @@ const OurCourses = () => {
         text: "Come back later for more interesting courses, you can contact us based on your interest on research and data analyses",
         price: "$0.00",
         icon: 'FaStar',
-        link: "/signup"
+        link: "/login"
     },
     {
         id: 2,
@@ -43,7 +43,7 @@ const OurCourses = () => {
         text: "Come back later for more interesting courses, you can contact us based on your interest on research and data analyses",
         price: "$0.00",
         icon: 'FaStar',
-        link: "/signup"
+        link: "/login"
     },
     {
         id: 3,
@@ -52,7 +52,7 @@ const OurCourses = () => {
         text: "Come back later for more interesting courses, you can contact us based on your interest on research and data analyses",
         price: "$0.00",
         icon: 'FaStar',
-        link: "/signup"
+        link: "/login"
     },
     {
         id: 4,
@@ -61,7 +61,7 @@ const OurCourses = () => {
         text: "Come back later for more interesting courses, you can contact us based on your interest on research and data analyses",
         price: "$0.00",
         icon: 'FaStar',
-        link: "/signup"
+        link: "/login"
     },
     {
         id: 5,
@@ -70,7 +70,7 @@ const OurCourses = () => {
         text: "Come back later for more interesting courses, you can contact us based on your interest on research and data analyses",
         price: "$0.00",
         icon: 'FaStar',
-        link: "/signup"
+        link: "/login"
     },
   ]
 
