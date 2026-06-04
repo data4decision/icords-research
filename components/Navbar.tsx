@@ -106,17 +106,17 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="fixed inset-0 bg-white z-50 pt-24 px-6 overflow-auto">
-                        <ul className="flex flex-col text-lg font-medium text-[var(--gray)]">
-                            <li className="border-b border-gray-100">
+                    <div className="fixed inset-0 bg-[var(--white)] z-50 pt-24 px-6 overflow-auto">
+                        <ul className="flex flex-col text-lg font-medium text-[var(--blue)]">
+                            <li className="border-b border-[var(--orange)]">
                                 <Link href="/" className="block py-4" onClick={() => setIsOpen(false)}>Home</Link>
                             </li>
-                            <li className="border-b border-gray-100">
+                            <li className="border-b border-[var(--orange)]">
                                 <Link href="/about" className="block py-4" onClick={() => setIsOpen(false)}>About</Link>
                             </li>
 
                             {/* Courses Dropdown - Mobile */}
-                            <li className="border-b border-gray-100">
+                            <li className="border-b border-[var(--orange)]">
                                 <button 
                                     onClick={() => toggleDropdown('courses')}
                                     className="w-full flex justify-between items-center py-4 text-left"
@@ -126,18 +126,18 @@ const Navbar = () => {
                                 </button>
                                 {openDropdown === 'courses' && (
                                     <ul className="pl-6 pb-4 space-y-3 text-base bg-[var(--orange)]">
-                                        <li><Link href="/courses" className='block px-6 py-3 hover:bg-gray-50 text-[var(--white)]'>All Courses Overview</Link></li>
-                                        <li><Link href="/courses/tier-1" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 1 - Diploma (Dip.RL)</Link></li>
-                                        <li><Link href="/courses/tier-2" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 2 - Master (M.RL)</Link></li>
-                                        <li><Link href="/courses/tier-3" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 3 - Doctorate (D.RL)</Link></li>
+                                        <li><Link href="/courses" className='block px-6 py-3 bg-[var(--orange)] hover:bg-gray-50 text-[var(--white)]'>All Courses Overview</Link></li>
+                                        <li><Link href="/courses/tier-1" className='block px-6 py-3 bg-[var(--orange)] hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 1 - Diploma (Dip.RL)</Link></li>
+                                        <li><Link href="/courses/tier-2" className='block px-6 py-3 bg-[var(--orange)] hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 2 - Master (M.RL)</Link></li>
+                                        <li><Link href="/courses/tier-3" className='block px-6 py-3 bg-[var(--orange)] hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 3 - Doctorate (D.RL)</Link></li>
                                         <li className="border-t border-[var(--blue)] my-2"></li>
-                                        <li><Link href="/milestone" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Milestones & Capstones</Link></li>
+                                        <li><Link href="/milestone" className='block px-6 py-3 bg-[var(--orange)] hover:bg-[var(--orange)]/90 text-[var(--white)]'>Milestones & Capstones</Link></li>
                                     </ul>
                                 )}
                             </li>
 
                             {/* Services Dropdown - Mobile */}
-                            <li className="border-b border-gray-100">
+                            <li className="border-b border-[var(--orange)]">
                                 <button 
                                     onClick={() => toggleDropdown('services')}
                                     className="w-full flex justify-between items-center py-4 text-left"
@@ -154,10 +154,10 @@ const Navbar = () => {
                                 )}
                             </li>
 
-                            <li className="border-b border-gray-100">
+                            <li className="border-b border-[var(--orange)]">
                                 <Link href="/publications" className="block py-4" onClick={() => setIsOpen(false)}>Publications</Link>
                             </li>
-                            <li className="border-b border-gray-100">
+                            <li className="border-b border-[var(--orange)]">
                                 <Link href="/contact" className="block py-4" onClick={() => setIsOpen(false)}>Contact</Link>
                             </li>
 
