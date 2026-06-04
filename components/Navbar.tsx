@@ -125,7 +125,7 @@ const Navbar = () => {
                                     <FaChevronDown className={`transition-transform ${openDropdown === 'courses' ? 'rotate-180' : ''}`} />
                                 </button>
                                 {openDropdown === 'courses' && (
-                                    <ul className="pl-6 pb-4 space-y-3 text-base">
+                                    <ul className="pl-6 pb-4 space-y-3 text-base bg-[var(--orange)]">
                                         <li><Link href="/courses" className='block px-6 py-3 hover:bg-gray-50 text-[var(--white)]'>All Courses Overview</Link></li>
                                         <li><Link href="/courses/tier-1" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 1 - Diploma (Dip.RL)</Link></li>
                                         <li><Link href="/courses/tier-2" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 2 - Master (M.RL)</Link></li>
