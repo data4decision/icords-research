@@ -60,6 +60,17 @@ const QuickNavigation = () => {
       >
         Tier 1 - LS-03
       </Link>
+
+      <Link
+        href="/courses/tier-1/LS-04"
+        className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
+          isActive('/courses/tier-1/LS-04')
+            ? 'bg-[var(--blue)] text-white shadow-lg shadow-blue-500/30'
+            : 'bg-white border border-gray-200 text-[var(--blue)] hover:bg-gray-100'
+        }`}
+      >
+        Tier 1 - LS-04
+      </Link>
     </div>
 
         {/* Legend */}
