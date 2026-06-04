@@ -18,7 +18,7 @@ const Tier1Page = () => {
         <Tier1Header/>
         <QuickNavigation/>
         <OrganisationDatabase/>
-        <CapstoneTier1/>
+        {/* <CapstoneTier1/> */}
         <Map/>
         <Footer/>
         </div>
@@ -144,16 +144,16 @@ const Tier1Page = () => {
 //   livelihoodsContext: "Multi-site livelihoods M&E: outcome harvesting, most significant change, impact pathways.",
 //   topics: {
 //     policy: [ /* Add all 10 items from your original content */ 
-//       "Results-Based Management for government programmes",
-//       "Logical frameworks and results chains for policy delivery",
-//       "Theory of change design for public sector interventions",
-//       "SMART indicators aligned to SDG and national targets",
-//       "Government data collection and administrative reporting tools",
-//       "Data quality assurance in national statistical systems",
-//       "Stakeholder reporting to ministries and oversight bodies",
-//       "Contribution analysis for policy attribution",
-//       "Data governance and ethics in public sector contexts",
-//       "Knowledge management for policy learning cycles"
+      // "Results-Based Management for government programmes",
+      // "Logical frameworks and results chains for policy delivery",
+      // "Theory of change design for public sector interventions",
+      // "SMART indicators aligned to SDG and national targets",
+      // "Government data collection and administrative reporting tools",
+      // "Data quality assurance in national statistical systems",
+      // "Stakeholder reporting to ministries and oversight bodies",
+      // "Contribution analysis for policy attribution",
+      // "Data governance and ethics in public sector contexts",
+      // "Knowledge management for policy learning cycles"
 //     ],
 //     business: [ /* ... */ ],
 //     livelihoods: [ /* ... */ ]

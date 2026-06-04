@@ -46,13 +46,13 @@ const Navbar = () => {
     <div className='flex items-center gap-1 hover:text-[var(--orange)] transition-colors px-3 py-2 cursor-pointer'>
         Courses <FaChevronDown size={14} />
     </div>
-    <ul className='absolute left-0 top-full mt-2 bg-white shadow-xl rounded-xl py-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all border border-gray-100'>
-        <li><Link href="/courses" className='block px-6 py-3 hover:bg-gray-50 text-gray-800'>All Courses Overview</Link></li>
-        <li><Link href="/courses/tier-1" className='block px-6 py-3 hover:bg-gray-50 text-gray-800'>Tier 1 - Diploma (Dip.RL)</Link></li>
-        <li><Link href="/courses/tier-2" className='block px-6 py-3 hover:bg-gray-50 text-gray-800'>Tier 2 - Master (M.RL)</Link></li>
-        <li><Link href="/courses/tier-3" className='block px-6 py-3 hover:bg-gray-50 text-gray-800'>Tier 3 - Doctorate (D.RL)</Link></li>
-        <li className="border-t border-gray-100 my-2"></li>
-        <li><Link href="/milestone" className='block px-6 py-3 hover:bg-gray-50 text-gray-800'>Milestones & Capstones</Link></li>
+    <ul className='absolute left-0 top-full mt-2 bg-[var(--orange)] shadow-xl rounded-xl py-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all border border-gray-100'>
+        <li><Link href="/courses" className='block px-6 py-3 hover:bg-gray-50 text-[var(--white)]'>All Courses Overview</Link></li>
+        <li><Link href="/courses/tier-1" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 1 - Diploma (Dip.RL)</Link></li>
+        <li><Link href="/courses/tier-2" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 2 - Master (M.RL)</Link></li>
+        <li><Link href="/courses/tier-3" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 3 - Doctorate (D.RL)</Link></li>
+        <li className="border-t border-[var(--blue)] my-2"></li>
+        <li><Link href="/milestone" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Milestones & Capstones</Link></li>
     </ul>
 </li>
 
@@ -126,8 +126,12 @@ const Navbar = () => {
                                 </button>
                                 {openDropdown === 'courses' && (
                                     <ul className="pl-6 pb-4 space-y-3 text-base">
-                                        <li><Link href="/courses" className="block py-1" onClick={() => setIsOpen(false)}>All Courses</Link></li>
-                                        <li><Link href="/milestone" className="block py-1" onClick={() => setIsOpen(false)}>Milestone</Link></li>
+                                        <li><Link href="/courses" className='block px-6 py-3 hover:bg-gray-50 text-[var(--white)]'>All Courses Overview</Link></li>
+                                        <li><Link href="/courses/tier-1" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 1 - Diploma (Dip.RL)</Link></li>
+                                        <li><Link href="/courses/tier-2" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 2 - Master (M.RL)</Link></li>
+                                        <li><Link href="/courses/tier-3" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 3 - Doctorate (D.RL)</Link></li>
+                                        <li className="border-t border-[var(--blue)] my-2"></li>
+                                        <li><Link href="/milestone" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Milestones & Capstones</Link></li>
                                     </ul>
                                 )}
                             </li>

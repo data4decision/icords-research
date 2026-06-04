@@ -27,7 +27,7 @@ const Tier1Header = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-3 bg-[var(--blue)]/90 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/30 shadow-sm">
                 <FaStar className="text-[var(--orange)]" />
-                <span className="font-semibold tracking-widest text-sm uppercase">TIER ONE - LS-01</span>
+                <span className="font-semibold tracking-widest text-sm uppercase">Tier Two - LOS-2</span>
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">

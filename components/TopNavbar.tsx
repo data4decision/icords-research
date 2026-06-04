@@ -30,7 +30,7 @@ const TopNavbar = () => {
     }, [])
 
     return (
-        <div className='bg-[var(--blue)]/80 md:flex md:flex-row flex-col items-center sm:justify-between px-8 sm:px-30  py-3 z-50 relative'>
+        <div className='bg-[var(--blue)] md:flex md:flex-row flex-col items-center sm:justify-between px-8 sm:px-30  py-3 z-50 relative'>
             {/* Logo */}
             <div className="flex items-center gap-2 text-[var(--white)]">
                 <Image
