@@ -2,17 +2,17 @@ import React from 'react';
 import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
 
-const Tier1Header = () => {
+const Tier2Header = () => {
   return (
     <div className="relative w-full overflow-hidden">
       {/* Background Image */}
       <Image 
-        src="/upload/xblog_03.jpg.pagespeed.ic.ZGQLz9XvWC.jpg" 
+        src="/upload/xblog_01.jpg.pagespeed.ic.2jVY1j1OMe.jpg" 
         alt="ICORDS Tier 1 - Diploma in Research & Learning"
         width={1200}
         height={600}
         priority
-        className="w-full h-[260px] sm:h-[300px] md:h-[340px] lg:h-[380px] xl:h-[420px] object-cover"
+        className="w-full h-[260px] sm:h-[300px] md:h-[340px] lg:h-[380px] xl:h-[420px] object-cover object-top"
       />
 
       {/* Dark Overlay */}
@@ -27,14 +27,14 @@ const Tier1Header = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-3 bg-[var(--blue)]/90 backdrop-blur-md px-5 py-2.5 rounded-full border border-white/30 shadow-sm">
                 <FaStar className="text-[var(--orange)]" />
-                <span className="font-semibold tracking-widest text-sm uppercase">Tier One - LOS-4</span>
+                <span className="font-semibold tracking-widest text-sm uppercase">TIER TWO - M.RL</span>
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                Diploma in Research & Learning
+                Master of Research & Learning 
               </h1>
               <p className="text-xl sm:text-2xl md:text-3xl text-[var(--orange)] font-medium">
-                (Dip. RL) - Data Science
+                (M.RL) - Data Science
               </p>
             </div>
 
@@ -55,4 +55,4 @@ const Tier1Header = () => {
   );
 };
 
-export default Tier1Header;
+export default Tier2Header;
