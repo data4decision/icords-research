@@ -125,13 +125,13 @@ const Navbar = () => {
                                     <FaChevronDown className={`transition-transform ${openDropdown === 'courses' ? 'rotate-180' : ''}`} />
                                 </button>
                                 {openDropdown === 'courses' && (
-                                    <ul className="pl-6 pb-4 space-y-3 text-base bg-[var(--orange)]">
-                                        <li><Link href="/courses" className='block px-6 py-3 border-b border-[var(--orange)] hover:bg-[var(--orange)]/90 text-[var(--white)]'>All Courses Overview</Link></li>
-                                        <li><Link href="/courses/tier-1" className='block px-6 py-3 border-b border-[var(--orange)] hover:bg-[var(--orange)]/20 text-[var(--orange)]'>Tier 1 - Diploma (Dip.RL)</Link></li>
-                                        <li><Link href="/courses/tier-2" className='block px-6 py-3 border-b border-[var(--orange)] hover:bg-[var(--orange)]/20 text-[var(--orange)]'>Tier 2 - Master (M.RL)</Link></li>
-                                        <li><Link href="/courses/tier-3" className='block px-6 py-3 border-b border-[var(--orange)] hover:bg-[var(--orange)]/20 text-[var(--orange)]'>Tier 3 - Doctorate (D.RL)</Link></li>
-                                        <li className="border-t border-[var(--blue)] my-2"></li>
-                                        <li><Link href="/milestone" className='block px-6 py-3 border border-[var(--orange)] hover:bg-[var(--orange)]/20 text-[var(--orange)]'>Milestones & Capstones</Link></li>
+                                    <ul className="pl-6 pb-4 space-y-3 text-base ">
+                                        <li><Link href="/courses" className='block px-6 py-3 border-b border-[var(--orange)]  text-[var(--blue)]'>All Courses Overview</Link></li>
+                                        <li><Link href="/courses/tier-1" className='block px-6 py-3 border-b border-[var(--orange)]  text-[var(--blue)]'>Tier 1 - Diploma (Dip.RL)</Link></li>
+                                        <li><Link href="/courses/tier-2" className='block px-6 py-3 border-b border-[var(--orange)] text-[var(--blue)]'>Tier 2 - Master (M.RL)</Link></li>
+                                        <li><Link href="/courses/tier-3" className='block px-6 py-3 border-b border-[var(--orange)]  text-[var(--blue)]'>Tier 3 - Doctorate (D.RL)</Link></li>
+                                        {/* <li className="border-t border-[var(--blue)] my-2"></li> */}
+                                        <li><Link href="/milestone" className='block px-6 py-3 text-[var(--blue)]'>Milestones & Capstones</Link></li>
                                     </ul>
                                 )}
                             </li>
