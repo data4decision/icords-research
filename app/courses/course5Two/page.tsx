@@ -6,6 +6,8 @@ import Navbar from '@/components/Navbar';
 import TopNavbar from '@/components/TopNavbar';
 import Image from 'next/image';
 import Course5HeaderTwo from '@/components/Course5HeaderTwo';
+import Map from '@/components/Map';
+import Footer from '@/components/Footer';
 
 const associateTracks = [
   {
@@ -189,6 +191,8 @@ const Course5Associate = () => {
       </div>
       <C5QuickLink/>
     </div>
+    <Map/>
+    <Footer/>
     </div>
   );
 };

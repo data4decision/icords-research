@@ -2,6 +2,8 @@
 
 import C5QuickLink from '@/components/C5QuickLink';
 import Course5Header from '@/components/Course5Header';
+import Footer from '@/components/Footer';
+import Map from '@/components/Map';
 import Navbar from '@/components/Navbar';
 import TopNavbar from '@/components/TopNavbar';
 import React from 'react';
@@ -188,6 +190,8 @@ const Course5Ordinary = () => {
       </div>
       <C5QuickLink/>
     </div>
+    <Map/>
+    <Footer/>
     </div>
   );
 };
