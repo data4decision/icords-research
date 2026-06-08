@@ -1,6 +1,7 @@
 import Footer from '@/components/Footer'
 import Map from '@/components/Map'
 import Navbar from '@/components/Navbar'
+import OrganisationDatabaseTier2L3 from '@/components/OrganisationDatabaseTier2L3'
 import Tier2Header from '@/components/Tier2Header'
 import Tier2QuickNavigation from '@/components/Tier2QuickNavigation'
 import TopNavbar from '@/components/TopNavbar'
@@ -13,6 +14,7 @@ const page = () => {
         <Navbar/>
         <Tier2Header/>
         <Tier2QuickNavigation/>
+        <OrganisationDatabaseTier2L3/>
         <Map/>
         <Footer/>
     </div>

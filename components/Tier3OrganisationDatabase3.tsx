@@ -1,6 +1,8 @@
 'use client'
 import Image from 'next/image';
 import React, { useState } from 'react'
+import { FaArrowRight } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Tier3OrganisationDatabase3 = () => {
 
@@ -145,6 +147,23 @@ const Tier3OrganisationDatabase3 = () => {
                             </li>
                         ))}
                         </ul>
+                        <div className="mt-8">
+                          <Link href="https://forms.gle/QHAzXKfzoikMNh8W9"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="inline-block bg-[var(--blue)]"
+                            >
+                              <button className="group relative inline-flex items-center gap-3 bg-bg-[var(--blue)] hover:bg-emerald-700 
+                               text-white font-semibold md:text-lg text-xs sm:px-10 px-5 md:py-4 py-2 rounded-2xl transition-all duration-300
+                               shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:-translate-y-0.5 active:scale-95">
+                                <span className=''>Enroll in Policy Level</span>
+                                <FaArrowRight className="w-5 h-5 text-white transition-transform duration-300 group-hover:translate-x-1" />
+                               </button>
+                            </Link>
+                            <p className="text-sm text-[var(--blue)]/50 mt-3">
+                              Limited slots available • Starts soon
+                            </p>
+                        </div>
                     </div>
                     <div className="">
                         <Image src="/images/hero1.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
@@ -164,6 +183,23 @@ const Tier3OrganisationDatabase3 = () => {
                             </li>
                         ))}
                         </ul>
+                        <div className="mt-8">
+                          <Link href="https://forms.gle/QHAzXKfzoikMNh8W9"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="inline-block bg-[var(--blue)]"
+                            >
+                              <button className="group relative inline-flex items-center gap-3 bg-bg-[var(--blue)] hover:bg-emerald-700 
+                               text-white font-semibold md:text-lg text-xs sm:px-10 px-5 md:py-4 py-2 rounded-2xl transition-all duration-300
+                               shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:-translate-y-0.5 active:scale-95">
+                                <span className=''>Enroll in Business Level</span>
+                                <FaArrowRight className="w-5 h-5 text-white transition-transform duration-300 group-hover:translate-x-1" />
+                               </button>
+                            </Link>
+                            <p className="text-sm text-[var(--blue)]/50 mt-3">
+                              Limited slots available • Starts soon
+                            </p>
+                        </div>
                     </div>
                     <div className="">
                         <Image src="/images/hero2.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
@@ -183,6 +219,23 @@ const Tier3OrganisationDatabase3 = () => {
                             </li>
                         ))}
                         </ul>
+                        <div className="mt-8">
+                          <Link href="https://forms.gle/QHAzXKfzoikMNh8W9"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           className="inline-block bg-[var(--blue)]"
+                            >
+                              <button className="group relative inline-flex items-center gap-3 bg-bg-[var(--blue)] hover:bg-emerald-700 
+                               text-white font-semibold md:text-lg text-xs sm:px-10 px-5 md:py-4 py-2 rounded-2xl transition-all duration-300
+                               shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:-translate-y-0.5 active:scale-95">
+                                <span className=''>Enroll in Livelihoods Level</span>
+                                <FaArrowRight className="w-5 h-5 text-white transition-transform duration-300 group-hover:translate-x-1" />
+                               </button>
+                            </Link>
+                            <p className="text-sm text-[var(--blue)]/50 mt-3">
+                              Limited slots available • Starts soon
+                            </p>
+                        </div>
                     </div>
                     <div className="">
                         <Image src="/images/hero3.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
