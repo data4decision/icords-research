@@ -26,9 +26,9 @@ const Navbar = () => {
                 {/* Logo */}
                 <div>
                     <Image
-                        src='/images/logo2.png'
+                        src='/images/logo.png'
                         alt='ICORDS Logo'
-                        width={180}
+                        width={60}
                         height={60}
                         priority
                     />
@@ -47,13 +47,13 @@ const Navbar = () => {
         Courses <FaChevronDown size={14} />
     </div>
     <ul className='absolute left-0 top-full mt-2 bg-[var(--orange)] shadow-xl rounded-xl py-3 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all border border-gray-100'>
-        <li><Link href="/courses" className='block px-6 py-3 hover:bg-gray-50 text-[var(--white)]'>All Courses Overview</Link></li>
+        <li><Link href="/courses" className='block px-6 py-3 hover:bg-gray-50 text-[var(--white)] hover:text-[var(--orange)]'>All Courses Overview</Link></li>
         <li><Link href="/courses/tier-1" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 1 - Diploma (Dip.RL)</Link></li>
         <li><Link href="/courses/tier-2" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 2 - Master (M.RL)</Link></li>
         <li><Link href="/courses/tier-3" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 3 - Doctorate (D.RL)</Link></li>
          <li><Link href="/courses/course5" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Course 5</Link></li>
         <li className="border-t border-[var(--blue)] my-2"></li>
-        <li><Link href="/milestone" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Milestones & Capstones</Link></li>
+        <li><Link href="#" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Milestones & Capstones</Link></li>
     </ul>
 </li>
 
@@ -64,19 +64,19 @@ const Navbar = () => {
                             </div>
                             <ul className='absolute left-0 top-full mt-2 bg-[var(--orange)] text-white shadow-xl rounded-md py-3 w-52 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all'>
                                 <li><Link href="/services" className='block px-5 py-2.5 hover:bg-white/20'>Our Services</Link></li>
-                                <li><Link href="/databank" className='block px-5 py-2.5 hover:bg-white/20'>Data Bank</Link></li>
-                                <li><Link href="/publications" className='block px-5 py-2.5 hover:bg-white/20'>Publications</Link></li>
+                                <li><Link href="#" className='block px-5 py-2.5 hover:bg-white/20'>Data Bank</Link></li>
+                                <li><Link href="#" className='block px-5 py-2.5 hover:bg-white/20'>Publications</Link></li>
                             </ul>
                         </li>
 
-                        <li><Link href="/publications" className='hover:text-[var(--orange)] transition-colors'>Publications</Link></li>
+                        <li><Link href="#" className='hover:text-[var(--orange)] transition-colors'>Publications</Link></li>
                         <li><Link href="/contact" className='hover:text-[var(--orange)] transition-colors'>Contact</Link></li>
                     </ul>
                 </div>
 
                 {/* Register Button */}
                 <Link 
-                    href="/register" 
+                    href="https://forms.gle/QHAzXKfzoikMNh8W9" 
                     className='flex items-center gap-2 bg-[var(--orange)] hover:bg-orange-600 px-5 py-2.5 rounded-md text-white text-sm font-medium transition-all'
                 >
                     <FaSignOutAlt />
@@ -89,9 +89,9 @@ const Navbar = () => {
                 <div className="absolute top-6 w-full px-6 flex justify-between items-center z-50">
                     {/* Logo */}
                     <Image
-                        src='/images/logo2.png'
+                        src='/images/logo.png'
                         alt='ICORDS Logo'
-                        width={160}
+                        width={50}
                         height={55}
                         priority
                     />
@@ -132,7 +132,7 @@ const Navbar = () => {
                                         <li><Link href="/courses/tier-2" className='block px-6 py-3 border-b border-[var(--orange)] text-[var(--blue)]'>Tier 2 - Master (M.RL)</Link></li>
                                         <li><Link href="/courses/tier-3" className='block px-6 py-3 border-b border-[var(--orange)]  text-[var(--blue)]'>Tier 3 - Doctorate (D.RL)</Link></li>
                                         {/* <li className="border-t border-[var(--blue)] my-2"></li> */}
-                                        <li><Link href="/milestone" className='block px-6 py-3 text-[var(--blue)]'>Milestones & Capstones</Link></li>
+                                        <li><Link href="#" className='block px-6 py-3 text-[var(--blue)]'>Milestones & Capstones</Link></li>
                                     </ul>
                                 )}
                             </li>
@@ -149,14 +149,14 @@ const Navbar = () => {
                                 {openDropdown === 'services' && (
                                     <ul className="pl-6 pb-4 space-y-3 text-base">
                                         <li><Link href="/services" className="block py-1" onClick={() => setIsOpen(false)}>Our Services</Link></li>
-                                        <li><Link href="/databank" className="block py-1" onClick={() => setIsOpen(false)}>Data Bank</Link></li>
-                                        <li><Link href="/publications" className="block py-1" onClick={() => setIsOpen(false)}>Publications</Link></li>
+                                        <li><Link href="#" className="block py-1" onClick={() => setIsOpen(false)}>Data Bank</Link></li>
+                                        <li><Link href="#" className="block py-1" onClick={() => setIsOpen(false)}>Publications</Link></li>
                                     </ul>
                                 )}
                             </li>
 
                             <li className="border-b border-[var(--orange)]">
-                                <Link href="/publications" className="block py-4" onClick={() => setIsOpen(false)}>Publications</Link>
+                                <Link href="#" className="block py-4" onClick={() => setIsOpen(false)}>Publications</Link>
                             </li>
                             <li className="border-b border-[var(--orange)]">
                                 <Link href="/contact" className="block py-4" onClick={() => setIsOpen(false)}>Contact</Link>
@@ -165,7 +165,7 @@ const Navbar = () => {
                             {/* Register Button - Mobile */}
                             <li className="mt-8">
                                 <Link 
-                                    href="/register"
+                                    href="https://forms.gle/QHAzXKfzoikMNh8W9"
                                     onClick={() => setIsOpen(false)}
                                     className="flex items-center justify-center gap-3 bg-[var(--orange)] text-white font-semibold py-4 rounded-xl text-base"
                                 >

@@ -34,7 +34,7 @@ const TopNavbar = () => {
             {/* Logo */}
             <div className="flex items-center gap-2 text-[var(--white)]">
                 <Image
-                    src="/images/apple-touch-icon-57x57.png"
+                    src="/images/logo.png"
                     alt="icords-logo"
                     width={30}
                     height={30}
