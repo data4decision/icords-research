@@ -165,7 +165,7 @@ const OrganisationDatabase = () => {
                         </div>
                     </div>
                     <div className="">
-                        <Image src="/images/hero1.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
+                        <Image src="/images/kyle-gregory-devaras-6RTM8EsD1T8-unsplash.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
                     </div>
                     </div>
                 )
@@ -201,7 +201,7 @@ const OrganisationDatabase = () => {
                         </div>
                     </div>
                     <div className="">
-                        <Image src="/images/hero2.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
+                        <Image src="/images/julio-lopez-Imz-pn2LMbg-unsplash.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
                     </div>
                     </div>
                 )
@@ -224,7 +224,7 @@ const OrganisationDatabase = () => {
                            rel="noopener noreferrer"
                            className="inline-block bg-[var(--blue)]"
                             >
-                              <button className="group relative inline-flex items-center gap-3 bg-bg-[var(--blue)] hover:bg-emerald-700 
+                              <button className="group relative inline-flex items-center gap-3 bg-bg-[var(--blue)] hover:bg-[var(--orange)] 
                                text-white font-semibold md:text-lg text-xs sm:px-10 px-5 md:py-4 py-2 rounded-2xl transition-all duration-300
                                shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:-translate-y-0.5 active:scale-95">
                                 <span className=''>Enroll in Livelihood Level</span>
@@ -237,7 +237,7 @@ const OrganisationDatabase = () => {
                         </div>
                     </div>
                     <div className="">
-                        <Image src="/images/hero3.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
+                        <Image src="/images/franco-alva-cXjcd98U4mY-unsplash.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-[var(--orange)] shadow-sm" />
                     </div>
                     </div>
                 )

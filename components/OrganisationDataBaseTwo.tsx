@@ -166,7 +166,7 @@ const OrganisationDatabaseTwo = () => {
                         </div>
                     </div>
                     <div className="">
-                        <Image src="/images/hero1.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
+                        <Image src="/images/justin-morgan-VxLhYXuLQN8-unsplash.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
                     </div>
                     </div>
                 )
@@ -202,7 +202,7 @@ const OrganisationDatabaseTwo = () => {
                         </div>
                     </div>
                     <div className="">
-                        <Image src="/images/hero2.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
+                        <Image src="/images/adeolu-eletu-rFUFqjEKzfY-unsplash.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
                     </div>
                     </div>
                 )
@@ -239,7 +239,7 @@ const OrganisationDatabaseTwo = () => {
                         </div>
                     </div>
                     <div className="">
-                        <Image src="/images/hero3.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
+                        <Image src="/images/jakub-zerdzicki-ib4xiNW-ne0-unsplash.jpg" alt="Database Icon" width={500} height={220} className="mt-6 rounded-lg border border-gray-200 shadow-sm" />
                     </div>
                     </div>
                 )
