@@ -14,14 +14,14 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-5">
             <div className="">
-              <div className=" ">
+              <div className="items-center">
                 <Image
                 src='/images/logo.png'
                 alt='logo'
                 width={500}
                 height={500}
                 priority
-                className='w-[50%] object-contain'
+                className='w-[30%] object-contain'
                 />
               </div>
               <div>

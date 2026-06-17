@@ -32,3 +32,12 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes kenBurns {
+  0% {
+    transform: scale(1.1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.25) translate(5px, 10px);
+  }
+}

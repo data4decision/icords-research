@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
     return (
       <button
         onClick={onClick}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[var(--blue)] p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
       >
         <FaChevronLeft size={20} />
       </button>
@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
     return (
       <button
         onClick={onClick}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[var(--blue)] p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
       >
         <FaChevronRight size={20} />
       </button>
@@ -71,7 +71,7 @@ const WhyChooseUs = () => {
         {/* Left Side - Gallery */}
         <div className="flex flex-col">
           <div className="mb-6">
-            <h1 className="sm:text-2xl text-xl font-bold">From Our Gallery</h1>
+            <h1 className="sm:text-2xl text-xl font-bold text-[var(--blue)]">From Our Gallery</h1>
             <hr className="w-12 mt-3 border-2 border-[var(--orange)]" />
           </div>
 
@@ -98,19 +98,19 @@ const WhyChooseUs = () => {
         {/* Right Side - Why Choose Us */}
         <div className="flex flex-col">
           <div className="mb-8">
-            <h1 className="text-2xl font-bold">Why Choose Us?</h1>
+            <h1 className="text-2xl font-bold text-[var(--blue)]">Why Choose Us?</h1>
             <hr className="w-12 mt-3 border-2 border-[var(--orange)]" />
           </div>
 
           {/* Add your content here */}
 
-          <div className="space-y-6 text-gray-600 border-1 px-3 pb-15">
+          <div className="space-y-6 text-[var(--blue)] border-1 px-3 pb-15">
             <button 
                 onClick={() => setSelectValue("mission")}
                 className={`sm:px-6 px-2 sm:py-3 py-1 border text-sm sm:text-lg font-bold border-[var(--gray)] transition-all duration-200
                     ${selectValue === 'mission' 
-                        ? 'bg-[var(--orange)] text-white border-[var(--orange)]' 
-                        : 'bg-[var(--gray)]/50 text-white hover:bg-[var(--gray)]/70'
+                        ? 'bg-[var(--orange)] text-white border-[var(--blue)]' 
+                        : 'bg-[var(--blue)] text-white hover:bg-[var(--orange)]'
                     }`}
             >
                 Our Mission
@@ -119,8 +119,8 @@ const WhyChooseUs = () => {
                 onClick={() => setSelectValue("vission")}
                 className={`sm:px-6 px-2 sm:py-3 py-1 border text-sm sm:text-lg font-bold border-[var(--gray)] transition-all duration-200
                     ${selectValue === 'vission' 
-                        ? 'bg-[var(--orange)] text-white border-[var(--orange)]' 
-                        : 'bg-[var(--gray)]/50 text-white hover:bg-[var(--gray)]/70'
+                        ? 'bg-[var(--orange)] text-white border-[var(--blue)]' 
+                        : 'bg-[var(--blue)] text-white hover:bg-[var(--orange)]'
                     }`}
             >
                 Our Vision
@@ -129,15 +129,15 @@ const WhyChooseUs = () => {
                 onClick={() => setSelectValue("goal")}
                 className={`sm:px-6 px-2 sm:py-3 py-1 border text-sm sm:text-lg font-bold border-[var(--gray)] transition-all duration-200
                     ${selectValue === 'goal' 
-                        ? 'bg-[var(--orange)] text-white border-[var(--orange)]' 
-                        : 'bg-[var(--gray)]/50 text-white hover:bg-[var(--gray)]/70'
+                        ? 'bg-[var(--orange)] text-white border-[var(--blue)]' 
+                        : 'bg-[var(--blue)] text-white hover:bg-[var(--orange)]'
                     }`}
             >
                 Our Gaol
             </button>
             {selectValue === 'mission' && (
                 <div className="">
-                    <p className='sm:text-[17px] text-sm'>The International College of Research and Data Science (ICORDS) 
+                    <p className='sm:text-[15px] text-[12px]'>The International College of Research and Data Science (ICORDS) 
                         is a leading institution dedicated to advancing research, data science, 
                         and evidence-based decision-making across various sectors. 
                         We specialize in providing world-class consultancy, training, 
@@ -155,7 +155,7 @@ const WhyChooseUs = () => {
 
             {/* Vission */}
             {selectValue === 'vission' && (
-            <p className='sm:text-[17px] text-sm'>
+            <p className='sm:text-[15px] text-[12px]'>
                 At ICORDS, we are dedicated to fostering knowledge, 
                 innovation, and sustainability by empowering individuals 
                 and organizations with data-driven solutions that meet the 
@@ -167,7 +167,7 @@ const WhyChooseUs = () => {
             )}
             {/* Our Goal */}
             {selectValue === 'goal' && (
-            <p className='sm:text-[17px] text-sm'>
+            <p className='sm:text-[15px] text-[12px]'>
                 At ICORDS, we are dedicated to fostering knowledge, 
                 innovation, and sustainability by empowering individuals 
                 and organizations with data-driven solutions that meet the 

@@ -40,13 +40,22 @@ const Contact = () => {
     });
   };
     return (
-        <div className="max-w-6xl mx-auto px-6 sm:py-20 py-10">
+      <div className="relative overflow-hidden bg-[var(--blue)]">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+          style={{
+            backgroundImage: "url('/images/data.jpg')",   // ← Change this image if needed
+            animation: "kenBurns 35s infinite alternate ease-in-out",
+          }}
+        />
+      
+        <div className="max-w-6xl mx-auto px-6 sm:py-20 py-10 ">
             {/* Header */}
             <div className="text-center mb-16">
-                <h1 className="text-2xl md:text-3xl font-bold text-[var(--blue)] mb-4">
+                <h1 className="text-2xl md:text-3xl font-bold text-[var(--white)] mb-4">
                     Get In Touch
                 </h1>
-                <p className="sm:text-lg text-sm text-[var(--blue)]/60 max-w-md mx-auto">
+                <p className="sm:text-[15px] text-[12px] text-[var(--white)] max-w-md mx-auto">
                     We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
                 </p>
             </div>
@@ -114,7 +123,7 @@ const Contact = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full bg-[var(--lightblue)] hover:bg-[var(--blue)] disabled:bg-[var(--orange)] text-[var(--white)] font-semibold py-4 rounded-xl transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2"
+            className="w-full bg-[var(--blue)] hover:bg-[var(--orange)] disabled:bg-[var(--lightblue)] text-[var(--white)] font-semibold py-4 rounded-xl transition-all duration-200 active:scale-[0.98] flex items-center justify-center gap-2"
           >
             {isLoading ? (
               <>
@@ -137,14 +146,14 @@ const Contact = () => {
                         <div className="space-y-6">
                             <div className="flex items-start gap-4">
                                 <div className="mt-1 w-10 h-10 rounded-full bg-[var(--lightblue)]/10 flex items-center justify-center flex-shrink-0">
-                                    <FaLink size={20} className="text-[var(--lightblue)]" />
+                                    <FaLink size={20} className="text-[var(--blue)]" />
                                 </div>
                                 <div>
                                     <p className="font-medium text-[var(--blue)] sm:text-lg text-sm">Website</p>
                                     <Link 
                                         href="https://www.icords-research.org/" 
                                         target="_blank"
-                                        className="text-[var(--blue)]/70 hover:text-[var(--lightblue)] sm:text-lg text-sm transition-colors"
+                                        className="text-[var(--blue)] hover:text-[var(--lightblue)] sm:text-[15px] text-[12px] transition-colors"
                                     >
                                         www.icords-research.org
                                     </Link>
@@ -153,13 +162,13 @@ const Contact = () => {
 
                             <div className="flex items-start gap-4">
                                 <div className="mt-1 w-10 h-10 rounded-full bg-[var(--lightblue)]/10 flex items-center justify-center flex-shrink-0">
-                                    <FaEnvelope size={20} className="text-[var(--lightblue)]" />
+                                    <FaEnvelope size={20} className="text-[var(--blue)]" />
                                 </div>
                                 <div>
                                     <p className="font-medium text-[var(--blue)] sm:text-lg text-sm">Email</p>
                                     <Link 
                                         href="mailto:info@icords-research.org"
-                                        className="text-[var(--blue)]/70 hover:text-[var(--lightblue)] sm:text-lg text-sm transition-colors"
+                                        className="text-[var(--blue)] hover:text-[var(--blue)] sm:text-[15px] text-[12px] transition-colors"
                                     >
                                         info@icords-research.org
                                     </Link>
@@ -168,26 +177,26 @@ const Contact = () => {
 
                             <div className="flex items-start gap-4">
                                 <div className="mt-1 w-10 h-10 rounded-full bg-[var(--lightblue)]/10 flex items-center justify-center flex-shrink-0">
-                                    <FaPhone size={20} className="text-[var(--lightblue)]" />
+                                    <FaPhone size={20} className="text-[var(--blue)]" />
                                 </div>
                                 <div>
                                     <p className="font-medium text-[var(--blue)] sm:text-lg text-sm">Phone</p>
-                                    <a 
+                                    <Link 
                                         href="tel:+2348069517707"
-                                        className="text-[var(--blue)]/70 hover:text-[var(--lightblue)] sm:text-lg text-sm transition-colors"
+                                        className="text-[var(--blue)] hover:text-[var(--blue)] sm:text-[15px] text-[12px] transition-colors"
                                     >
                                         +234 806 951 7707
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
 
                             <div className="flex items-start gap-4">
                                 <div className="mt-1 w-10 h-10 rounded-full bg-[var(--lightblue)]/10 flex items-center justify-center flex-shrink-0">
-                                    <FaHouseUser size={20} className="text-[var(--lightblue)]" />
+                                    <FaHouseUser size={20} className="text-[var(--blue)]" />
                                 </div>
                                 <div>
                                     <p className="font-medium text-[var(--blue)] sm:text-lg text-sm">Address</p>
-                                    <p className="text-[var(--blue)]/70 sm:text-lg text-sm">
+                                    <p className="text-[var(--blue)] sm:text-[15px] text-[12px]">
                                         Ilorin, Kwara State, Nigeria
                                     </p>
                                 </div>
@@ -196,6 +205,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

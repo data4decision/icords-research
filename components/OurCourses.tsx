@@ -94,11 +94,11 @@ const OurCourses = () => {
     <div className='hidden lg:block'>
 
       <div className="text-center sm:py-25 py-10  ">
-        <h1 className='md:text-3xl text-xl text-[var(--gray)] font-bold'>
+        <h1 className='md:text-3xl text-xl text-[var(--blue)] font-bold'>
           Our Courses
         </h1>
 
-        <p className='md:text-xl text-sm text-[var(--gray)]/50'>
+        <p className='md:text-xl text-sm text-[var(--blue)]'>
           Listed Below Courses Element
         </p>
       </div>
@@ -121,7 +121,7 @@ const OurCourses = () => {
             >
               <Link href={prog.href} className="block h-full">
                 <div 
-  className="relative h-full rounded-3xl overflow-hidden shadow-lg border border-[var(--blue)]/20 
+  className="relative h-full rounded-3xl overflow-hidden shadow-lg border border-[var(--blue)] opacity-95 
              hover:shadow-2xl transition-all duration-500 flex flex-col"
   style={{
     backgroundImage: `url(${prog.image})`,
@@ -130,7 +130,7 @@ const OurCourses = () => {
     backgroundRepeat: 'no-repeat',
   }}
 >
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/65" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-[var(--blue)] via-[var(--blue)] to-[var(--orange)] opacity-40" />
                   {/* Gradient Top Accent */}
                   {/* <div className={`h-2 w-full bg-gradient-to-r ${prog.color}`} /> */}
 
@@ -154,7 +154,7 @@ const OurCourses = () => {
                       {prog.title}
                     </h3>
 
-                    <p className="text-[var(--white)] leading-relaxed mb-3 flex-1 text-[16px] md:text-[20px] lg:text-[24px]">
+                    <p className="text-[var(--orange)] leading-relaxed mb-3 flex-1 text-[12px] font-semibold md:text-[15px] lg:text-[15px]">
                       {prog.description}
                     </p>
 
