@@ -28,7 +28,7 @@ const About = () => {
     return (
       <button
         onClick={onClick}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/80 hover:bg-white text-[var(--blue)] p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
       >
         <FaChevronRight size={20} />
       </button>
@@ -94,16 +94,16 @@ const About = () => {
         {/* Right Side - Why Choose Us */}
         <div className="flex flex-col">
           <div className="mb-8">
-            <h1 className="text-2xl font-bold">Welcome to ICORDS-Research Institute.</h1>
+            <h1 className="text-2xl font-bold text-[var(--blue)] ">Welcome to ICORDS-Research Institute.</h1>
             <hr className="w-12 mt-5 border-1 border-[var(--orange)]" />
           </div>
 
           {/* Section 2 */}
 
-          <div className="space-y-6 text-gray-600">
+          <div className="space-y-6 text-[var(--blue)]">
                   
                 <div className="">
-                    <p className='sm:text-[17px] text-sm'>
+                    <p className='sm:text-[15px] text-sm'>
                         A leading institution dedicated to advancing research, 
                         data science, and evidence-based decision-making across 
                         various sectors. We specialize in providing world-class 

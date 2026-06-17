@@ -22,7 +22,7 @@ const Navbar = () => {
     return (
         <div className="relative z-50">
             {/* Desktop Navbar */}
-            <div className='hidden lg:flex absolute top-6 w-full px-8 justify-between items-center'>
+            <div className='hidden lg:flex absolute top-4 w-full px-8 justify-between items-center bg-[var(--white)]/30 backdrop-blur-md'>
                 {/* Logo */}
                 <div>
                     <Image
@@ -36,7 +36,7 @@ const Navbar = () => {
 
                 {/* Desktop Navigation */}
                 <div>
-                    <ul className='flex gap-6 items-center text-black font-medium'>
+                    <ul className='flex gap-6 items-center text-[var(--blue)] font-medium'>
                         <li><Link href="/" className='hover:text-[var(--orange)] transition-colors'>Home</Link></li>
                         <li><Link href="/about" className='hover:text-[var(--orange)] transition-colors'>About</Link></li>
 

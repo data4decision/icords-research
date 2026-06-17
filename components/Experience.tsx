@@ -30,7 +30,7 @@ const Experience = () => {
     <div className='max-w-6xl sm:py-25 py-15 m-auto'>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-4">
             <div className="mx-5">
-                <h3 className='text-[17px] sm:text-[20px] text-[var(--gray)] font-bold '>Why Choose Us</h3>
+                <h3 className='text-[17px] sm:text-[20px] text-[var(--blue)] font-bold '>Why Choose Us</h3>
                 <hr className='text-[var(--orange)] w-[50] mt-4'/>
                 <div className="mt-4">
                     {faq.map((faq, index)=>(
@@ -38,8 +38,8 @@ const Experience = () => {
                             <button onClick={()=> toggleItem(index)}
                                 aria-expanded={!!openItem[index]}
                                 aria-controls={`faq-${index}`}
-                                className='flex items-center justify-between bg-[var(--gray)]/50 w-full px-5 py-1 '>
-                                <span className='sm:text-[15px] text-[12px]'>{faq.question}</span>
+                                className='flex items-center justify-between bg-[var(--blue)] w-full px-5 py-1 '>
+                                <span className='sm:text-[15px] text-[12px] text-[var(--white)]'>{faq.question}</span>
                                 {openItem[index] ? (
                                     <FaMinus size={18} className='bg-[var(--orange)] text-[var(--white)] p-1'/>
                                  ) : (
@@ -48,26 +48,26 @@ const Experience = () => {
                             </button>
                             {/* Answer */}
                             {openItem[index] && (
-                                <p className='sm:text-[12px] text-[10px] px-4 mt-1'>{faq.answer}</p>
+                                <p className='sm:text-[12px] text-[10px] px-4 mt-1 text-[var(--blue)]'>{faq.answer}</p>
                             )}
                         </div>
                     ))}
                 </div>
             </div>
             <div className="px-10">
-                <h3 className='text-[17px] sm:text-[20px] text-[var(--gray)] font-bold '>Why Choose Us</h3>
+                <h3 className='text-[17px] sm:text-[20px] text-[var(--blue)] font-bold '>Why Choose Us</h3>
                 <hr className='text-[var(--orange)] w-[50] mt-4'/>
                 <div className="">
                     <div className="flex items-center gap-1 mt-3">
-                        <p className='font-bold sm:text-[15px] text-[12px]'>DataBank Projects</p>
+                        <p className='font-bold sm:text-[15px] text-[12px] text-[var(--blue)]'>DataBank Projects</p>
                         <span className='flex items-center gap-1 sm:text-[15px] text-[12px]'>
-                            <p>-</p>
-                            <p>90%</p>
+                            <p className='text-[var(--blue)]'>-</p>
+                            <p className='text-[var(--blue)]'>90%</p>
                         </span>
                     </div>
                         <div className="relative w-full mt-2">
                             {/* Gray background line */}
-                            <div className="border-4 rounded-lg w-full border-[var(--gray)]/50"></div>
+                            <div className="border-4 rounded-lg w-full border-[var(--blue)]"></div>
 
                             {/* Orange progress line */}
                             <div className="absolute top-0 left-0 border-4 rounded-lg w-[90%] border-[var(--orange)]"></div>
@@ -75,15 +75,15 @@ const Experience = () => {
                     </div>
                     <div className="">
                     <div className="flex items-center gap-1 mt-3">
-                        <p className='font-bold sm:text-[15px] text-[12px]'>Certification Program</p>
+                        <p className='font-bold sm:text-[15px] text-[12px] text-[var(--blue)]'>Certification Program</p>
                         <span className='flex items-center gap-1 sm:text-[15px] text-[12px]'>
-                            <p>-</p>
-                            <p>95%</p>
+                            <p className='text-[var(--blue)]'>-</p>
+                            <p className='text-[var(--blue)]'>95%</p>
                         </span>
                     </div>
                         <div className="relative w-full mt-2">
                             {/* Gray background line */}
-                            <div className="border-4 rounded-lg w-full border-[var(--gray)]/50"></div>
+                            <div className="border-4 rounded-lg w-full border-[var(--blue)]"></div>
 
                             {/* Orange progress line */}
                             <div className="absolute top-0 left-0 border-4 rounded-lg w-[95%] border-[var(--orange)]"></div>
@@ -92,15 +92,15 @@ const Experience = () => {
 
                     <div className="">
                     <div className="flex items-center gap-1 mt-3">
-                        <p className='font-bold sm:text-[15px] text-[12px]'>Consultancies</p>
+                        <p className='font-bold sm:text-[15px] text-[12px] text-[var(--blue)]'>Consultancies</p>
                         <span className='flex items-center gap-1 sm:text-[15px] text-[12px]'>
-                            <p>-</p>
-                            <p>70%</p>
+                            <p className='text-[var(--blue)]'>-</p>
+                            <p className='text-[var(--blue)]'>70%</p>
                         </span>
                     </div>
                         <div className="relative w-full mt-2">
                             {/* Gray background line */}
-                            <div className="border-4 rounded-lg w-full border-[var(--gray)]/50"></div>
+                            <div className="border-4 rounded-lg w-full border-[var(--blue)]"></div>
 
                             {/* Orange progress line */}
                             <div className="absolute top-0 left-0 border-4 rounded-lg w-[70%] border-[var(--orange)]"></div>
@@ -109,10 +109,10 @@ const Experience = () => {
 
                     <div className="">
                     <div className="flex items-center gap-1 mt-3">
-                        <p className='font-bold sm:text-[15px] text-[12px]'>Data Analysis</p>
+                        <p className='font-bold sm:text-[15px] text-[12px] text-[var(--blue)]'>Data Analysis</p>
                         <span className='flex items-center gap-1 sm:text-[15px] text-[12px]'>
-                            <p>-</p>
-                            <p>100%</p>
+                            <p className='text-[var(--blue)]'>-</p>
+                            <p className='text-[var(--blue)]'>100%</p>
                         </span>
                     </div>
                         <div className="relative w-full mt-2">
