@@ -51,7 +51,7 @@ const Navbar = () => {
         <li><Link href="/courses/tier-1" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 1 - Diploma (Dip.RL)</Link></li>
         <li><Link href="/courses/tier-2" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 2 - Master (M.RL)</Link></li>
         <li><Link href="/courses/tier-3" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Tier 3 - Doctorate (D.RL)</Link></li>
-         <li><Link href="/courses/course5" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Course 5</Link></li>
+         <li><Link href="/courses/course5" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Software Applications</Link></li>
         <li className="border-t border-[var(--blue)] my-2"></li>
         <li><Link href="#" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Milestones & Capstones</Link></li>
     </ul>
@@ -131,6 +131,7 @@ const Navbar = () => {
                                         <li><Link href="/courses/tier-1" className='block px-6 py-3 border-b border-[var(--orange)]  text-[var(--blue)]'>Tier 1 - Diploma (Dip.RL)</Link></li>
                                         <li><Link href="/courses/tier-2" className='block px-6 py-3 border-b border-[var(--orange)] text-[var(--blue)]'>Tier 2 - Master (M.RL)</Link></li>
                                         <li><Link href="/courses/tier-3" className='block px-6 py-3 border-b border-[var(--orange)]  text-[var(--blue)]'>Tier 3 - Doctorate (D.RL)</Link></li>
+                                        <li><Link href="/courses/course5" className='block px-6 py-3 hover:bg-[var(--orange)]/90 text-[var(--white)]'>Software Applications</Link></li>
                                         {/* <li className="border-t border-[var(--blue)] my-2"></li> */}
                                         <li><Link href="#" className='block px-6 py-3 text-[var(--blue)]'>Milestones & Capstones</Link></li>
                                     </ul>
