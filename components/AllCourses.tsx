@@ -47,7 +47,7 @@ const programmes = [
   },
   {
     id: 'specialist',
-    title: "Course 5 – Specialist Tracks",
+    title: "Software Application ",
     acronym: "C5",
     description: "11 focused software & tool-specific tracks for practical, job-ready skills.",
     duration: "8 Weeks per track",
@@ -179,7 +179,7 @@ const ProgrammeCatalogue = () => {
 
                         {prog.isSpecialist && (
                           <div className="mb-8 p-5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 text-center">
-                            <p className="text-white text-sm font-medium mb-3">11 Specialist Tracks Available</p>
+                            <p className="text-white text-sm font-medium mb-3">11 Software Application Available</p>
                             <div className="flex flex-wrap gap-1.5 justify-center text-[10px] font-mono">
                               {['SPSS', 'Excel', 'R', 'STATA', 'NVivo', 'Power BI', 'Tableau', 'AI', 'KoboToolbox', 'DHIS2', 'GIS'].map(tool => (
                                 <span key={tool} className="bg-white/90 text-[var(--blue)] px-2 py-0.5 rounded">
