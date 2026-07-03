@@ -17,7 +17,7 @@ const slides = [
     bg: "/upload/xslider_new_03.jpg.pagespeed.ic.0dDeZb1yS7.jpg",
     image: "/images/apple-touch-icon-57x57.png",
     title: "ICORDS-RESEARCH",
-    text: "International Center for Research Development",
+    text: "International College of Research and Data Science",
     link: "/subscribe",
     link2: "/read-more"
   },
