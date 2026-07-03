@@ -121,7 +121,7 @@ const Course5Associate = () => {
     <div className="max-w-7xl mx-auto px-4 py-16">
       <div className="text-center mb-16">
         <h2 className="lg:text-3xl md:text-2xl text-xl font-bold text-[var(--blue)] mb-4">
-          Course 5 - Associate Level
+           Associate Level -  Software Application
         </h2>
         <p className="text-md text-[var(--orange)] max-w-2xl mx-auto">
           No prior experience required • 8 Weeks per track

@@ -34,7 +34,7 @@ const QuickNavigation = () => {
             : 'bg-white border border-gray-200 text-[var(--blue)] hover:bg-gray-100'
         }`}
       >
-        Ordinary Level
+         Software Application - Ordinary Level
       </Link>
 
       {/* LS-02 */}
@@ -46,7 +46,7 @@ const QuickNavigation = () => {
             : 'bg-white border border-gray-200 text-[var(--blue)] hover:bg-gray-100'
         }`}
       >
-       Associate Level
+       Software Application - Associate Level
       </Link>
 
       {/* LS-03 */}

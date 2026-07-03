@@ -16,8 +16,8 @@ const Course5HeaderTwo = () => {
             />
         </div>
         <div className="absolute  top-1/2 -translate-y-1/2 px-4 ">
-            <h1 className='lg:text-xl md:text-md text-xs text-[var(--blue)] font-bold bg-[var(--white)] w-[350px] sm:ml-20 ml-10  px-4 py-3 rounded-lg border-b-3 border-r-0 border-l-0 border-t-0 border-[var(--blue)] inline-block  '>
-            Associate Level - Course 5
+            <h1 className='lg:text-xl md:text-md text-xs text-[var(--blue)] font-bold bg-[var(--white)] w-[400px] sm:ml-20 ml-10  px-4 py-3 rounded-lg border-b-3 border-r-0 border-l-0 border-t-0 border-[var(--blue)] inline-block  '>
+            Associate Level -  Software Application
             </h1>
             <p className='bg-[var(--blue)] text-[var(--white)] lg:text-xl md:text-md text-xs sm:ml-20  font-semibold mt-3 rounded-lg border-b-3 border-r-0 border-l-0 border-t-0 border-[var(--orange)] px-4 py-4'>For individuals with some prior tool experience, or who have completed the Ordinary level. Goes deeper</p>
            
