@@ -34,7 +34,7 @@ const QuickNavigation = () => {
             : 'bg-white border border-gray-200 text-[var(--blue)] hover:bg-gray-100'
         }`}
       >
-        Tier 3 - LS-01
+         LS-01
       </Link>
 
       {/* LS-02 */}
@@ -46,7 +46,7 @@ const QuickNavigation = () => {
             : 'bg-white border border-gray-200 text-[var(--blue)] hover:bg-gray-100'
         }`}
       >
-        Tier 3 - LS-02
+        LS-02
       </Link>
 
       {/* LS-03 */}
@@ -58,7 +58,7 @@ const QuickNavigation = () => {
             : 'bg-white border border-gray-200 text-[var(--blue)] hover:bg-gray-100'
         }`}
       >
-        Tier 3 - LS-03
+        LS-03
       </Link>
 
       <Link
@@ -69,7 +69,7 @@ const QuickNavigation = () => {
             : 'bg-white border border-gray-200 text-[var(--blue)] hover:bg-gray-100'
         }`}
       >
-        Tier 3 - LS-04
+        LS-04
       </Link>
     </div>
 
