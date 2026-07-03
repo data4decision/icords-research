@@ -1,173 +1,19 @@
-// import Image from 'next/image';
-// import Link from 'next/link';
-// import React from 'react';
-// import { FaShoppingCart, FaStar, FaStarHalfAlt } from 'react-icons/fa';
-
-// const AllCourses = () => {
-//     const courses = [
-//         {
-//             id: 1,
-//             image: '/upload/xcourse_01.png.pagespeed.ic.XTOvCuUmZu.png',
-//             title: 'MEARL DATA SCIENCE (MDS)',
-//             link: '/course/meal-data-science',
-//             students: '29 Students',
-//             rating: 5,
-//         },
-//         {
-//             id: 2,
-//             image: '/upload/xcourse_02.png.pagespeed.ic.PL7Wu2UcSB.png',
-//             title: 'BUSINESS & MARKET DATA SCIENCE (BMD)',
-//             link: '/course/business-market',
-//             students: '29 Students',
-//             rating: 4.5,
-//         },
-//         {
-//             id: 3,
-//             image: '/upload/xcourse_03.png.pagespeed.ic.8e1MyY5M7i.png',
-//             title: 'SCHOLARS DATA SCIENCE (SDC)',
-//             link: '/course/scholar-science',
-//             students: '13 Students',
-//             rating: 4,
-//         },
-//         {
-//             id: 4,
-//             image: '/upload/xcourse_09.png.pagespeed.ic.onaUPvr7s-.png',
-//             title: 'SCHOLARS DATA SCIENCE (SDC)',
-//             link: '/course/scholar-data',
-//             students: '20 Students',
-//             rating: 5,
-//         },
-//         {
-//             id: 5,
-//             image: '/upload/xcourse_05.png.pagespeed.ic.mrKpzOf8LX.png',
-//             title: 'INTRODUCTION TO STATISTICAL SOFTWARES (SPSS, R, or Python)',
-//             link: '/course/statistic',
-//             students: '18 Students',
-//             rating: 4.5,
-//         },
-//         {
-//             id: 6,
-//             image: '/upload/xcourse_06.png.pagespeed.ic.2iR1Lq1HrU.png',
-//             title: 'BASIC DATA VISUALIZATION TECHNIQUES AND TOOLS (e.g., Excel, Tableau)',
-//             link: '/course/data-visualisation',
-//             students: '22 Students',
-//             rating: 4,
-//         },
-//         {
-//             id: 7,
-//             image: '/upload/xcourse_07.png.pagespeed.ic.KNvblD_Vd1.png',
-//             title: 'ADVANCED DATA VISUALIZATION TECHNIQUES (TABLEAU, POWER BI, GGPLOT2)',
-//             link: '/course/advance-data',
-//             students: '12 Students',
-//             rating: 5,
-//         },
-//         {
-//             id: 8,
-//             image: '/upload/xcourse_08.png.pagespeed.ic.uuUPd8pkHT.png',
-//             title: 'MEASURING AND ENHANCING RESEARCH IMPACT (H-INDEX, CITATION METRICS)',
-//             link: '/course/measure-enhancing',
-//             students: '44 Students',
-//             rating: 4.5,
-//         },
-//     ];
-
-//     const StarRating = ({ rating }: { rating: number }) => {
-//         return (
-//             <div className="flex items-center gap-0.5 text-yellow-400">
-//                 {[1, 2, 3, 4, 5].map((star) => {
-//                     if (rating >= star) {
-//                         return <FaStar key={star} size={16} />;
-//                     } else if (rating + 0.5 >= star) {
-//                         return <FaStarHalfAlt key={star} size={16} />;
-//                     } else {
-//                         return <FaStar key={star} size={16} className="text-gray-300" />;
-//                     }
-//                 })}
-//             </div>
-//         );
-//     };
-
-//     return (
-//         <div className="max-w-7xl mx-auto py-20 px-4">
-//             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-//                 {courses.map((course) => (
-//                     <div
-//                         key={course.id}
-//                         className="group flex flex-col bg-white overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
-//                     >
-//                         {/* Image Container */}
-//                         <div className="relative aspect-[16/10] overflow-hidden">
-//                             <Image
-//                                 src={course.image}
-//                                 alt={course.title}
-//                                 fill
-//                                 className="object-cover group-hover:scale-105 transition-transform duration-300"
-//                                 priority={course.id <= 4}
-//                             />
-
-//                             {/* Shopping Cart - Hover Effect */}
-//                             <Link
-//                                 href="/cart"
-//                                 className="absolute top-4 right-4 bg-white text-[var(--orange)] p-3 rounded-full shadow-md 
-//                                            opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0
-//                                            transition-all duration-300 hover:bg-[var(--blue)] hover:text-white"
-//                                 aria-label="Add to cart"
-//                             >
-//                                 <FaShoppingCart size={20} />
-//                             </Link>
-//                         </div>
-
-//                         {/* Content */}
-//                         <div className="p-5 flex-1 flex flex-col">
-//                             <Link
-//                                 href={course.link}
-//                                 className="font-bold text-[15px] text-[var(--blue)] leading-tight hover:text-blue-700 transition-colors line-clamp-3 mb-3"
-//                             >
-//                                 {course.title}
-//                             </Link>
-//                              <div className="flex items-center px-0 justify-between">
-//                                 {/* Students */}
-//                             <p className="text-sm text-gray-600">
-//                                 {course.students}
-//                             </p>
-//                             {/* Rating */}
-//                             <div className="flex items-center gap-2 ">
-//                                 <StarRating rating={course.rating} />
-//                                 <span className="text-sm text-gray-500">({course.rating})</span>
-//                             </div>
-//                              </div>
-//                         </div>
-//                     </div>
-//                 ))}
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default AllCourses;
-
-
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { 
-  Award, 
-  GraduationCap, 
-  BookOpen, 
-  Target 
-} from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Award, GraduationCap, BookOpen, Target, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const programmes = [
-  {
+const programmes = [ 
+   {
     id: 'diploma',
     title: "Diploma in Research & Learning",
     acronym: "Dip.RL",
     description: "Build strong foundations in research methodology, academic writing, and data literacy.",
     duration: "6 Months",
     level: "Level 1",
-    image: "/images/diploma.jpg",           // ← Change to your image
+    image: "/images/diploma.jpg",
     badgeColor: "bg-blue-600",
     href: "/courses/tier-1",
     icon: BookOpen,
@@ -215,123 +61,163 @@ const programmes = [
   },
 ];
 
+;
+
 const ProgrammeCatalogue = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const itemsPerView = {
+    mobile: 1,
+    tablet: 2,
+    desktop: 3,
+  };
+
+  const totalSlides = programmes.length;
+  const maxIndex = totalSlides - itemsPerView.desktop; 
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => Math.min(prev + 1, maxIndex));
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => Math.max(prev - 1, 0));
+  };
+
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[var(--blue)] tracking-tight mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--blue)] tracking-tight mb-4">
             ICORDS Programme Catalogue
           </h2>
-          <p className="text-sm md:text-md lg:text-md text-[var(--blue)] max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-[var(--blue)]/90 max-w-2xl mx-auto">
             Choose your path. From foundational learning to doctoral research and specialist expertise.
           </p>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-          {programmes.map((prog, index) => (
+        {/* Slider Container */}
+        <div className="relative">
+          {/* Navigation Arrows */}
+          <button
+            onClick={prevSlide}
+            className="absolute -left-5 md:-left-8 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hidden md:flex items-center justify-center transition-all"
+            disabled={currentIndex === 0}
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+
+          <button
+            onClick={nextSlide}
+            className="absolute -right-5 md:-right-8 top-1/2 -translate-y-1/2 z-20 bg-white/90 hover:bg-white text-gray-700 p-3 rounded-full shadow-lg hidden md:flex items-center justify-center transition-all"
+            disabled={currentIndex >= maxIndex}
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+
+          {/* Cards Slider */}
+          <div className="overflow-hidden">
             <motion.div
-              key={prog.id}
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -12 }}
-              className="group relative h-full"
+              className="flex gap-6 md:gap-8"
+              animate={{ x: `calc(-${currentIndex * (100 / 3)}%)` }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
             >
-              <Link href={prog.href} className="block h-full">
-                <div 
-  className="relative h-full rounded-3xl overflow-hidden shadow-lg border border-[var(--blue)]/20 
-             hover:shadow-2xl transition-all duration-500 flex flex-col"
-  style={{
-    backgroundImage: `url(${prog.image})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-  }}
->
-                  <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/65" />
-                  {/* Gradient Top Accent */}
-                  <div className={`h-2 w-full bg-gradient-to-r ${prog.color}`} />
-
-                  {/* Icon & Badge */}
-                  <div className="flex justify-between items-start p-8 pb-4">
-                    <motion.div
-                      whileHover={{ rotate: 12, scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 300 }}
+              {programmes.map((prog, index) => (
+                <div
+                  key={prog.id}
+                  className="flex-shrink-0 w-full md:w-[40%] lg:w-[31%]"
+                >
+                  <Link href={prog.href} className="block h-full">
+                    <div
+                      className="relative h-full min-h-[480px] md:min-h-[520px] rounded-3xl overflow-hidden shadow-lg border border-[var(--blue)]/20 
+                                 hover:shadow-2xl transition-all duration-500 flex flex-col group"
+                      style={{
+                        backgroundImage: `url(${prog.image})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                      }}
                     >
-                      <prog.icon className="w-12 h-12 text-[var(--blue)]" strokeWidth={2.5} />
-                    </motion.div>
+                      <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/65 to-black/85" />
 
-                    <span className={`px-4 py-1.5 text-xs font-bold text-[var(--orange)] rounded-full ${prog.badgeColor}`}>
-                      {prog.acronym}
-                    </span>
-                  </div>
+                      {/* Top Accent */}
+                      <div className={`h-2 w-full bg-gradient-to-r ${prog.color}`} />
 
-                  {/* Content */}
-                  <div className="px-8 pb-8 flex-1 flex flex-col">
-                    <h3 className="text-xl md:text-2xl lg:text-3xl  font-semibold text-[var(--blue)] mb-3 leading-tight">
-                      {prog.title}
-                    </h3>
+                      {/* Icon & Badge */}
+                      <div className="flex justify-between items-start p-6 md:p-8 pb-4 relative z-10">
+                        <motion.div whileHover={{ rotate: 12, scale: 1.1 }}>
+                          <prog.icon className="w-11 h-11 md:w-12 md:h-12 text-white" strokeWidth={2.5} />
+                        </motion.div>
 
-                    <p className="text-[var(--white)] leading-relaxed mb-8 flex-1 text-[16px] md:text-[20px] lg:text-[24px]">
-                      {prog.description}
-                    </p>
-
-                    {/* Meta Info */}
-                    <div className="space-y-3 mb-10">
-                      <div className="flex items-center gap-3 text-sm">
-                        <div className="w-5 h-px bg-[var(--orange)]" />
-                        <span className="font-medium text-[var(--blue)]">Duration</span>
-                        <span className="font-semibold text-[var(--blue)]">{prog.duration}</span>
+                        <span className={`px-4 py-1.5 text-xs font-bold text-white rounded-full ${prog.badgeColor}`}>
+                          {prog.acronym}
+                        </span>
                       </div>
 
-                      <div className="flex items-center gap-3 text-sm">
-                        <div className="w-5 h-px bg-[var(--orange)]" />
-                        <span className="font-medium text-[var(--blue)]">Tier</span>
-                        <span className="font-semibold text-[var(--blue)]">{prog.level}</span>
+                      {/* Content */}
+                      <div className="px-6 md:px-8 pb-8 flex-1 flex flex-col relative z-10">
+                        <h3 className="text-2xl font-semibold text-white leading-tight mb-4">
+                          {prog.title}
+                        </h3>
+
+                        <p className="text-white/90 text-[15px] leading-relaxed mb-8 flex-1">
+                          {prog.description}
+                        </p>
+
+                        {/* Meta */}
+                        <div className="space-y-3 mb-8 text-sm">
+                          <div className="flex items-center gap-3">
+                            <div className="w-5 h-px bg-[var(--orange)]" />
+                            <span className="text-white/80">Duration</span>
+                            <span className="font-semibold text-white">{prog.duration}</span>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <div className="w-5 h-px bg-[var(--orange)]" />
+                            <span className="text-white/80">Tier</span>
+                            <span className="font-semibold text-white">{prog.level}</span>
+                          </div>
+                        </div>
+
+                        {prog.isSpecialist && (
+                          <div className="mb-8 p-5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 text-center">
+                            <p className="text-white text-sm font-medium mb-3">11 Specialist Tracks Available</p>
+                            <div className="flex flex-wrap gap-1.5 justify-center text-[10px] font-mono">
+                              {['SPSS', 'Excel', 'R', 'STATA', 'NVivo', 'Power BI', 'Tableau', 'AI', 'KoboToolbox', 'DHIS2', 'GIS'].map(tool => (
+                                <span key={tool} className="bg-white/90 text-[var(--blue)] px-2 py-0.5 rounded">
+                                  {tool}
+                                </span>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        <motion.button
+                          whileHover={{ scale: 1.02 }}
+                          whileTap={{ scale: 0.97 }}
+                          className="mt-auto w-full py-4 bg-white hover:bg-[var(--orange)] hover:text-white text-gray-900 font-semibold rounded-2xl transition-all flex items-center justify-center gap-2"
+                        >
+                          Explore Programme
+                          <span className="text-xl group-hover:translate-x-1 transition-transform">→</span>
+                        </motion.button>
                       </div>
                     </div>
-
-                    {/* Specialist Extra Info */}
-                    {prog.isSpecialist && (
-                      <div className="mb-8 p-5 bg-[var(--orange)] rounded-2xl border border-[var(--orange)]/90 text-center">
-                        <p className="text-[var(--white)] text-sm font-medium mb-3">
-                          11 Specialist Tracks Available
-                        </p>
-                        <div className="flex flex-wrap gap-1 text-[10px] font-mono text-[var(--blue)]">
-                          {['SPSS', 'Excel', 'R', 'STATA', 'NVivo', 'Power BI', 'Tableau', 'AI', 'KoboToolbox', 'DHIS2', 'GIS'].map(tool => (
-                            <span key={tool} className="bg-white px-2 py-0.5 rounded border border-[var(--blue)]/20">
-                              {tool}
-                            </span>
-                          ))}
-                        </div>
-                        <p className="text-xs text-[var(--blue)] mt-3">Ordinary &amp; Associate Levels • Specialist Certificate</p>
-                      </div>
-                    )}
-
-                    {/* CTA Button */}
-                    <motion.button
-                      whileHover={{ scale: 1.03 }}
-                      whileTap={{ scale: 0.97 }}
-                      className="mt-auto w-full py-4 bg-gray-900 hover:bg-black text-white font-semibold rounded-2xl 
-                                 transition-all duration-300 flex items-center justify-center gap-2 group-hover:gap-3"
-                    >
-                      Explore Programme
-                      <span className="text-lg transition-transform group-hover:translate-x-1">→</span>
-                    </motion.button>
-                  </div>
-
-                  {/* Animated Gradient Border */}
-                  <div className="absolute inset-0 rounded-3xl border border-transparent 
-                                group-hover:border-gradient-to-r group-hover:from-blue-400 group-hover:via-violet-400 group-hover:to-emerald-400 
-                                transition-all duration-500 pointer-events-none" />
+                  </Link>
                 </div>
-              </Link>
+              ))}
             </motion.div>
-          ))}
+          </div>
+
+          {/* Dots Indicator */}
+          <div className="flex justify-center gap-3 mt-10">
+            {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`w-3 h-3 rounded-full transition-all ${
+                  currentIndex === idx ? 'bg-[var(--blue)] scale-125' : 'bg-gray-300'
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -339,5 +225,3 @@ const ProgrammeCatalogue = () => {
 };
 
 export default ProgrammeCatalogue;
-
-
